@@ -17,10 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tutorial DJump.unity
     guid: 7ca10bbc03c4b56478e8efbbfa4aa21c
-  - enabled: 1
-    path: Assets/Scenes/Level 5.unity
+  - enabled: 0
+    path: Assets/Scenes/Level Rockhead Test.unity
     guid: 2f8ec293e29f14e4bbc8543a72e8c478
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level 2.unity
     guid: b02963f90c05fdf4d8c7a9aec4dfbdf4
   m_configObjects: {}
