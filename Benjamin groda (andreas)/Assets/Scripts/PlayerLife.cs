@@ -29,7 +29,15 @@ public class PlayerLife : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Spikes"))
         {
-            
+
+            Die();
+        }
+        else if (collision.gameObject.CompareTag("DeathZone")) 
+        {
+            Die();
+        }
+        else if (collision.gameObject.CompareTag("Saw"))
+        {
             Die();
         }
     }

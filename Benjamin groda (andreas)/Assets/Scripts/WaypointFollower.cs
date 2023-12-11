@@ -8,7 +8,7 @@ public class WaypointFollower : MonoBehaviour
 
     [SerializeField] private GameObject[] waypoints;
     private Rigidbody2D rb;
-    [Serailizefei]
+    
 
 
     private Transform waypointTransform;
