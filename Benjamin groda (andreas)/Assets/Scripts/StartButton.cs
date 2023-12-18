@@ -6,8 +6,9 @@ using UnityEngine.SceneManagement;
 public class StartButton : MonoBehaviour
 {
     // Start is called before the first frame update
-    public void StartGame() { 
-    
+    public void StartGame()
+    {
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
@@ -16,4 +17,13 @@ public class StartButton : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+    public void QuitGame()
+    {
+#if UNITY_STANDALONE
+        Application.Quit();
+#endif
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
     }
+}
