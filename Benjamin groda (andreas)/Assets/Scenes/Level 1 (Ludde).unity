@@ -105680,7 +105680,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\xC4ppel: 0"
+  m_text: "\xC4pplen: 0"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 93f630cb9545b374693b37f2306be221, type: 2}
   m_sharedMaterial: {fileID: 6450210280400505032, guid: 93f630cb9545b374693b37f2306be221, type: 2}
