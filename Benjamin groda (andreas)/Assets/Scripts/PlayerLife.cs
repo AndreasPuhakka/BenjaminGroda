@@ -47,6 +47,13 @@ public class PlayerLife : MonoBehaviour
         DeathSound.Play();
         anim.SetTrigger("death");
         rb.bodyType = RigidbodyType2D.Static;
+        IncompletedLevel();
+
+    }
+
+    private void IncompletedLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 
 

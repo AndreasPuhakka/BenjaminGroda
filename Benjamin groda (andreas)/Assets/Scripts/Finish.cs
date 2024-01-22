@@ -28,7 +28,7 @@ public class Finish : MonoBehaviour
 
       
 
-        if (collision.gameObject.name == "Player" && levelCompleted != true && Item.points == totalpoäng)
+        if (collision.gameObject.name == "Player" && levelCompleted != true && Item.points >= totalpoäng)
         {
             anim.SetTrigger("finish");
             finishSound.Play();
