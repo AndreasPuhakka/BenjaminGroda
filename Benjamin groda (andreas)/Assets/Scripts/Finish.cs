@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class Finish : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class Finish : MonoBehaviour
 
     private AudioSource finishSound;
     private bool levelCompleted = false;
+
+    [SerializeField] private ItemCollector Item;
+
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +28,7 @@ public class Finish : MonoBehaviour
 
       
 
-        if (collision.gameObject.name == "Player" && levelCompleted != true && points == totalpoäng)
+        if (collision.gameObject.name == "Player" && levelCompleted != true && Item.points == totalpoäng)
         {
             anim.SetTrigger("finish");
             finishSound.Play();
