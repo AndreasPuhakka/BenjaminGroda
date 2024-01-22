@@ -6,7 +6,7 @@ using UnityEngine;
 public class ItemCollector : MonoBehaviour
 {
 
-    private int points = 0;
+    int points = 0;
     [SerializeField] private TextMeshProUGUI äppleText;
     [SerializeField] private AudioSource äppelsound;
 

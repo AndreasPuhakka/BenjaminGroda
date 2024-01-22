@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Finish : MonoBehaviour
 {
-
     private Animator anim;
+    [SerializeField] private int totalpoäng;
 
     private AudioSource finishSound;
     private bool levelCompleted = false;
@@ -18,9 +18,13 @@ public class Finish : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
+
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "Player" && levelCompleted != true)
+
+      
+
+        if (collision.gameObject.name == "Player" && levelCompleted != true && points == totalpoäng)
         {
             anim.SetTrigger("finish");
             finishSound.Play();
