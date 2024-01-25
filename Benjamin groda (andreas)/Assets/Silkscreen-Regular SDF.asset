@@ -475,13 +475,6 @@ MonoBehaviour:
     m_Y: 76
     m_Width: 65
     m_Height: 76
-<<<<<<< HEAD
-  - m_X: 301
-    m_Y: 76
-    m_Width: 65
-    m_Height: 76
-=======
->>>>>>> 003b22de7725df362f7431eafede770e02a958a1
   m_FreeGlyphRects:
   - m_X: 606
     m_Y: 0
@@ -507,15 +500,6 @@ MonoBehaviour:
     m_Y: 107
     m_Width: 34
     m_Height: 916
-<<<<<<< HEAD
-  - m_X: 366
-    m_Y: 98
-    m_Width: 657
-    m_Height: 925
-  - m_X: 366
-    m_Y: 76
-    m_Width: 175
-=======
   - m_X: 301
     m_Y: 98
     m_Width: 722
@@ -523,7 +507,6 @@ MonoBehaviour:
   - m_X: 301
     m_Y: 76
     m_Width: 240
->>>>>>> 003b22de7725df362f7431eafede770e02a958a1
     m_Height: 947
   m_fontInfo:
     Name: 
