@@ -9,6 +9,7 @@ TagManager:
   - HitPoint
   - DeathZone
   - Saw
+  - Ground
   layers:
   - Default
   - TransparentFX
