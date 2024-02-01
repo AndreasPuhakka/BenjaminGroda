@@ -30284,6 +30284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 703457314aeb2034cba5cd52ca13bba9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  points: 0
   "\xE4ppleText": {fileID: 1434697719}
   "\xE4ppelsound": {fileID: 1412435641}
 --- !u!82 &1412435639
@@ -31218,6 +31219,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1946359834266924181, guid: afb00b17174978c4aaab79f96dd82100, type: 3}
+      propertyPath: Item
+      value: 
+      objectReference: {fileID: 1412435638}
     - target: {fileID: 4975947787975637624, guid: afb00b17174978c4aaab79f96dd82100, type: 3}
       propertyPath: m_Name
       value: Checkpoint
