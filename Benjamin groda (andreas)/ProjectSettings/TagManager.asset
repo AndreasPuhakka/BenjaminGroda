@@ -10,6 +10,7 @@ TagManager:
   - DeathZone
   - Saw
   - Ground
+  - PlatformDestroy
   layers:
   - Default
   - TransparentFX
