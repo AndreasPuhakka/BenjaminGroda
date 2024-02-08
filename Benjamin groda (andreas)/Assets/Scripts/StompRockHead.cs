@@ -1,17 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class StompRockHead : MonoBehaviour
 {
-    [SerializeField] private GameObject[] startPos;
     private Rigidbody2D rb;
-    private Transform startPosTransform;
+    [SerializeField] private Transform startPosTransform;
 
     [SerializeField] private float speed = 2f;
     private const string PlayerTag = "Player";
     private const string GroundTag = "Ground";
+
+    private Animator anim;
 
     private bool isMoving = false; // Flag to check if the object is moving towards StartPos
 
@@ -19,6 +19,7 @@ public class StompRockHead : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
         rb.bodyType = RigidbodyType2D.Static;
     }
 
@@ -39,19 +40,32 @@ public class StompRockHead : MonoBehaviour
             // Add any other logic you need when colliding with the player
         }
 
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
         if (collision.gameObject.tag == GroundTag)
         {
             // Start moving towards StartPos when touching the ground
             isMoving = true;
+
+            
+
+            rb.bodyType = RigidbodyType2D.Static;
+
+            anim.SetTrigger("Tophit");
+
+            Debug.Log(isMoving);
         }
     }
 
     private void MoveTowardsStartPos()
     {
-        if (startPosTransform == null && startPos.Length > 0)
+        // Check if startPosTransform is null
+        if (startPosTransform == null)
         {
-            // Set the target position to the first StartPos
-            startPosTransform = startPos[0].transform;
+            Debug.LogWarning("startPosTransform is not set. Cannot move towards start position.");
+            return;
         }
 
         // Move towards the StartPos
