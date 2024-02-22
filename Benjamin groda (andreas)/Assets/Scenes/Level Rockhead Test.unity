@@ -610,6 +610,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2354814209935967741, guid: a8a202ba0d322b245a24d732c5d851a8, type: 3}
+      propertyPath: speed
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 3452525070833108937, guid: a8a202ba0d322b245a24d732c5d851a8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -18.62
@@ -677,6 +681,22 @@ PrefabInstance:
     - target: {fileID: 6733638903713193706, guid: a8a202ba0d322b245a24d732c5d851a8, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9044387213285940945, guid: a8a202ba0d322b245a24d732c5d851a8, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9044387213285940945, guid: a8a202ba0d322b245a24d732c5d851a8, type: 3}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9044387213285940945, guid: a8a202ba0d322b245a24d732c5d851a8, type: 3}
+      propertyPath: m_Constraints
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9044387213285940945, guid: a8a202ba0d322b245a24d732c5d851a8, type: 3}
+      propertyPath: m_UseFullKinematicContacts
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
