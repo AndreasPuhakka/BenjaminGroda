@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerLife : MonoBehaviour
 {
-
+    public int goBack = 1;
     private Animator anim;
     private Rigidbody2D rb;
     [SerializeField] private AudioSource DeathSound;
@@ -51,9 +51,9 @@ public class PlayerLife : MonoBehaviour
 
     }
 
-    private void IncompletedLevel()
+    void IncompletedLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - goBack);
     }
 
 
