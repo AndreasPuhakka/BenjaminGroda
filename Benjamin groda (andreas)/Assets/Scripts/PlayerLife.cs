@@ -12,7 +12,7 @@ public class PlayerLife : MonoBehaviour
     [SerializeField] private AudioSource DeathSound;
 
     void Start()
-    {
+    { 
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
     }
