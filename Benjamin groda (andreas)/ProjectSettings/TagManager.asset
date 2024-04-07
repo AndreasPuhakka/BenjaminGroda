@@ -11,6 +11,7 @@ TagManager:
   - Saw
   - Ground
   - PlatformDestroy
+  - Jetpack
   layers:
   - Default
   - TransparentFX
