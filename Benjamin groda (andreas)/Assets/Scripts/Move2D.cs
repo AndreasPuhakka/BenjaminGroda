@@ -19,8 +19,9 @@ public class Move2D : MonoBehaviour
     [SerializeField] private int extraJumps = 1;
     [SerializeField] private int maxJumps = 1;
     private BoxCollider2D boxCol;
-
     
+
+
     [SerializeField] private AudioSource DubbleJumpSoundEffect;
     [SerializeField] private AudioSource JumpSoundEffect;
 
@@ -53,6 +54,7 @@ public class Move2D : MonoBehaviour
             DoubleJump();
             // state = MovementState.double_jumping;
         }
+       
 
         if (isGrounded())
         {
@@ -114,3 +116,5 @@ public class Move2D : MonoBehaviour
         return Physics2D.BoxCast(boxCol.bounds.center, boxCol.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
     }
 }
+
+
