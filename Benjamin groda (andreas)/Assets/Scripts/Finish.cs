@@ -34,6 +34,7 @@ public class Finish : MonoBehaviour
             finishSound.Play();
             levelCompleted = true;
             Invoke("CompleteLevel", 2f);
+            collision.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX;
 
         }
     }
@@ -44,3 +45,4 @@ public class Finish : MonoBehaviour
     }
 
 }
+ 
