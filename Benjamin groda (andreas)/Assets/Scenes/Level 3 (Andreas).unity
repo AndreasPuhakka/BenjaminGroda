@@ -102763,6 +102763,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06b2e32d22e40f4e819dbec58a055e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goBack: 1
   DeathSound: {fileID: 1412435643}
 --- !u!114 &1412435638
 MonoBehaviour:
@@ -107273,7 +107274,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -350, y: -209}
+  m_AnchoredPosition: {x: -180, y: -114}
   m_SizeDelta: {x: 150, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2128865126
