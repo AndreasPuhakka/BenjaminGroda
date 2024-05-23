@@ -30,14 +30,17 @@ public class PlayerLife : MonoBehaviour
         if (collision.gameObject.CompareTag("Spikes"))
         {
             anim.SetTrigger("death");
+            rb.bodyType = RigidbodyType2D.Static;
         }
         else if (collision.gameObject.CompareTag("DeathZone")) 
         {
             anim.SetTrigger("death");
+            rb.bodyType = RigidbodyType2D.Static;
         }
         else if (collision.gameObject.CompareTag("Saw"))
         {
             anim.SetTrigger("death");
+            rb.bodyType = RigidbodyType2D.Static;
         }
     }
 
@@ -46,7 +49,6 @@ public class PlayerLife : MonoBehaviour
         DeathSound.Play();
         rb.bodyType = RigidbodyType2D.Static;
         IncompletedLevel();
-
     }
 
     void IncompletedLevel()
